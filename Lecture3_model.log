@@ -1,0 +1,274 @@
+Starting Dynare (version 6.3).
+Calling Dynare with arguments: none
+Starting preprocessing of the model file ...
+Found 8 equation(s).
+Evaluating expressions...
+Computing static model derivatives (order 1).
+Normalizing the static model...
+Finding the optimal block decomposition of the static model...
+6 block(s) found:
+  5 recursive block(s) and 1 simultaneous block(s).
+  the largest simultaneous block has 3 equation(s)
+                                 and 3 feedback variable(s).
+Computing dynamic model derivatives (order 1).
+Normalizing the dynamic model...
+Finding the optimal block decomposition of the dynamic model...
+4 block(s) found:
+  3 recursive block(s) and 1 simultaneous block(s).
+  the largest simultaneous block has 3 equation(s)
+                                 and 3 feedback variable(s).
+Preprocessing completed.
+Preprocessing time: 0h00m01s.
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+             0.5              0.5                0
+          0.5476           0.5476                0
+             0.9              0.9                0
+            1.18             1.18                0
+           1.407            1.407                0
+       2.593e+16        2.593e+16                0
+
+There are 3 eigenvalue(s) larger than 1 in modulus for 3 forward-looking variable(s)
+The rank condition is verified.
+
+
+STEADY-STATE RESULTS:
+
+pi    		 0
+y     		 0
+r     		 0
+i     		 0
+y_n   		 0
+y_gap 		 0
+a     		 0
+d     		 0
+
+MODEL SUMMARY
+
+  Number of variables:         8
+  Number of stochastic shocks: 3
+  Number of state variables:   3
+  Number of jumpers:           3
+  Number of static variables:  3
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables    epsilon_v  epsilon_a  epsilon_d
+epsilon_v     0.000000   0.000000   0.000000
+epsilon_a     0.000000   0.000000   0.000000
+epsilon_d     0.000000   0.000000   0.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                  pi               y               r               i             y_n           y_gap               a               d
+i(-1)                      -1.368637       -0.819169               0        0.547601               0       -0.819169               0               0
+d(-1)                       0.612623        0.690976               0        0.161793               0        0.690976               0        0.500000
+a(-1)                      -0.212899       -0.127426       -0.140000       -0.054818        0.400000       -0.527426        0.900000               0
+epsilon_v                  -1.520707       -0.910188               0        0.608446               0       -0.910188               0               0
+epsilon_a                  -0.236554       -0.141585       -0.155556       -0.060908        0.444444       -0.586029        1.000000               0
+epsilon_d                   1.225247        1.381951               0        0.323586               0        1.381951               0        1.000000
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+pi             0.0000     0.0000     0.0000
+y              0.0000     0.0000     0.0000
+r              0.0000     0.0000     0.0000
+i              0.0000     0.0000     0.0000
+y_n            0.0000     0.0000     0.0000
+y_gap          0.0000     0.0000     0.0000
+a              0.0000     0.0000     0.0000
+d              0.0000     0.0000     0.0000
+
+
+
+VARIANCE DECOMPOSITION (in percent)
+         epsilon_v  epsilon_a  epsilon_d
+pi             NaN        NaN        NaN
+y              NaN        NaN        NaN
+r              NaN        NaN        NaN
+i              NaN        NaN        NaN
+y_n            NaN        NaN        NaN
+y_gap          NaN        NaN        NaN
+a              NaN        NaN        NaN
+d              NaN        NaN        NaN
+
+All endogenous are constant or non stationary, not displaying correlations and auto-correlations
+
+
+You did not declare endogenous variables after the estimation/calib_smoother command.
+Posterior IRFs will be computed for the 8 endogenous variables
+of your model, this can take a long time ....
+
+
+Choose one of the following options:
+
+ [1] Consider all the endogenous variables.
+ [2] Consider all the observed endogenous variables.
+ [3] Stop Dynare and change the mod file.
+ [4] Consider all the endogenous and auxiliary variables.
+
+options [default is 1] =  2
+
+Prior distribution for parameter rho_d has unbounded density!
+Initial value of the log posterior (or likelihood): -818.3621
+
+==========================================================
+   Change in the posterior covariance matrix = 3.9998.
+   Change in the posterior mean = 1.6658.
+   Current mode = -1501.5718
+   Mode improvement = 2319.9339
+   New value of jscale = 0.00072357
+==========================================================
+
+==========================================================
+   Change in the posterior covariance matrix = 0.0071696.
+   Change in the posterior mean = 1.9224.
+   Current mode = -1582.9021
+   Mode improvement = 81.3303
+   New value of jscale = 0.062101
+==========================================================
+
+==========================================================
+   Change in the posterior covariance matrix = 0.010646.
+   Change in the posterior mean = 0.25001.
+   Current mode = -1755.5616
+   Mode improvement = 172.6596
+   New value of jscale = 0.11269
+==========================================================
+
+Optimal value of the scale parameter = 0.11269
+
+
+Final value of minus the log posterior (or likelihood):-1755.561641 
+
+MODE CHECK
+
+Fval obtained by the optimization routine: -1755.561641
+
+RESULTS FROM POSTERIOR ESTIMATION
+parameters
+          prior mean     mode    s.d.  prior pstdev
+
+sigma         1.5000   1.3644  0.1073   norm 0.5000 
+beta          0.5000   0.9960  0.1015   beta 0.2000 
+varphi_pi     1.5000   1.1094  0.0238   norm 0.2000 
+rho_a         0.5000   0.5318  0.0631   beta 0.2000 
+rho_d         0.2000   0.2396  0.0143   beta 0.2000 
+
+standard deviation of shocks
+          prior mean     mode    s.d.  prior pstdev
+
+epsilon_a     0.0100   0.0044  0.0020   invg 2.0000 
+epsilon_d     0.0100   0.0209  0.0069   invg 2.0000 
+epsilon_v     0.0100   0.0028  0.0004   invg 2.0000 
+
+
+Log data density [Laplace approximation] is 1721.126363.
+
+Estimation::mcmc: Multiple chains mode.
+Estimation::mcmc: Old mh-files successfully erased!
+Estimation::mcmc: Old metropolis.log file successfully erased!
+Estimation::mcmc: Creation of a new metropolis.log file.
+Estimation::mcmc: Searching for initial values...
+Estimation::mcmc: Initial values found!
+
+Estimation::mcmc: Write details about the MCMC... Ok!
+Estimation::mcmc: Details about the MCMC are available in Lecture3_model/metropolis/Lecture3_model_mh_history_0.mat
+
+
+Estimation::mcmc: Number of mh files: 1 per block.
+Estimation::mcmc: Total number of generated files: 2.
+Estimation::mcmc: Total number of iterations: 100000.
+Estimation::mcmc: Current acceptance ratio per chain:
+                                                       Chain  1: 32.36%
+                                                       Chain  2: 32.918%
+Estimation::mcmc: Total number of MH draws per chain: 100000.
+Estimation::mcmc: Total number of generated MH files: 1.
+Estimation::mcmc: I'll use mh-files 1 to 1.
+Estimation::mcmc: In MH-file number 1 I'll start at line 50001.
+Estimation::mcmc: Finally I keep 50000 draws per chain.
+
+
+
+MCMC Inefficiency factors per block
+Parameter          Block 1     Block 2
+SE_epsilon_a       663.091     581.875
+SE_epsilon_d       484.452     446.441
+SE_epsilon_v       412.948     453.313
+sigma              661.158     614.921
+beta                19.104      17.374
+varphi_pi          721.829     706.137
+rho_a              724.254     701.522
+rho_d              652.044     710.224
+
+
+
+Convergence diagnostics results for chain 1.
+
+Geweke (1992) Convergence Tests, based on means of draws 50000 to 60000 vs 75000 to 100000 for chain 1.
+p-values are for Chi2-test for equality of means.
+Parameter            Post. Mean        Post. Std   p-val No Taper   p-val 4% Taper   p-val 8% Taper  p-val 15% Taper
+SE_epsilon_a              0.007            0.004            0.000            0.000            0.001            0.004
+SE_epsilon_d              0.021            0.001            0.000            0.454            0.550            0.600
+SE_epsilon_v              0.003            0.000            0.000            0.681            0.726            0.755
+sigma                     1.426            0.115            0.000            0.000            0.000            0.000
+beta                      0.994            0.004            0.000            0.005            0.007            0.002
+varphi_pi                 1.084            0.040            0.000            0.064            0.178            0.303
+rho_a                     0.457            0.049            0.000            0.000            0.000            0.000
+rho_d                     0.209            0.027            0.001            0.877            0.906            0.923
+
+
+
+
+Convergence diagnostics results for chain 2.
+
+Geweke (1992) Convergence Tests, based on means of draws 50000 to 60000 vs 75000 to 100000 for chain 2.
+p-values are for Chi2-test for equality of means.
+Parameter            Post. Mean        Post. Std   p-val No Taper   p-val 4% Taper   p-val 8% Taper  p-val 15% Taper
+SE_epsilon_a              0.006            0.002            0.000            0.340            0.400            0.417
+SE_epsilon_d              0.022            0.001            0.000            0.000            0.000            0.000
+SE_epsilon_v              0.003            0.000            0.000            0.008            0.019            0.038
+sigma                     1.400            0.105            0.000            0.004            0.021            0.035
+beta                      0.993            0.004            0.000            0.076            0.080            0.057
+varphi_pi                 1.181            0.071            0.000            0.436            0.568            0.658
+rho_a                     0.553            0.041            0.000            0.000            0.000            0.000
+rho_d                     0.216            0.035            0.000            0.000            0.000            0.000
+
+
+Univariate convergence diagnostic, Brooks and Gelman (1998):
+    Parameter 1...  Done! 
+    Parameter 2...  Done! 
+    Parameter 3...  Done! 
+    Parameter 4...  Done! 
+    Parameter 5...  Done! 
+    Parameter 6...  Done! 
+    Parameter 7...  Done! 
+    Parameter 8...  Done! 
+
+marginal density: I'm computing the posterior mean and covariance...  Done!
+marginal density: I'm computing the posterior log marginal density (modified harmonic mean)... Done!
+
+
+ESTIMATION RESULTS
+
+Log data density (Modified Harmonic Mean) is 1723.030129.
+parameters
+            prior mean   post. mean        90% HPD interval    prior       pstdev
+
+sigma            1.500       1.4227      1.2429      1.6012     norm       0.5000
+beta             0.500       0.9935      0.9878      0.9992     beta       0.2000
+varphi_pi        1.500       1.1589      1.0371      1.2596     norm       0.2000
+rho_a            0.500       0.5267      0.3866      0.6167     beta       0.2000
+rho_d            0.200       0.2128      0.1554      0.2642     beta       0.2000
+
+standard deviation of shocks
+            prior mean   post. mean        90% HPD interval    prior       pstdev
+
+epsilon_a        0.010       0.0065      0.0024      0.0105     invg       2.0000
+epsilon_d        0.010       0.0214      0.0191      0.0239     invg       2.0000
+epsilon_v        0.010       0.0029      0.0026      0.0033     invg       2.0000
+Estimation::mcmc: Posterior (dsge) IRFs...
+Estimation::mcmc: Posterior IRFs, done!
+Prior distribution for parameter rho_d has unbounded density!
+Total computing time : 0h12m08s
